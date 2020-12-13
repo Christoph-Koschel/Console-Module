@@ -1,5 +1,6 @@
 import {Vars} from "./vars";
 import {Event} from "./event";
+import {View} from "./view";
 import * as list from"./list";
 import * as write from "./write";
 import * as table from "./table";
@@ -35,6 +36,11 @@ export const Write = write.Write.Write;
 
 
 export const On = event.On;
+export const view = {
+    Send: View.Send,
+    On: View.On
+}
+
 
 //endregion
 //region templates

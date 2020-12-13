@@ -1,20 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Event = void 0;
-var Vars = require("./vars").Vars;
+var vars_1 = require("./vars");
+var eventId_1 = require("./eventId");
 var Event = /** @class */ (function () {
     function Event() {
     }
     Event.prototype.On = function (event, callback) {
         // @ts-ignore
-        var id = Vars.eventEmitter[event].length;
+        var id = vars_1.Vars.eventEmitter[event].length;
         // @ts-ignore
-        Vars.eventEmitter[event].push(callback);
-        return new EventId(id);
+        vars_1.Vars.eventEmitter[event].push(callback);
+        return new eventId_1.EventId(id);
     };
     Event.prototype.Emit = function (event, value) {
         // @ts-ignore
-        var eventList = Vars.eventEmitter[event];
+        var eventList = vars_1.Vars.eventEmitter[event];
         for (var i = 0; i < eventList.length; i++) {
             eventList[i](value);
         }
@@ -22,10 +23,4 @@ var Event = /** @class */ (function () {
     return Event;
 }());
 exports.Event = Event;
-var EventId = /** @class */ (function () {
-    function EventId(id) {
-        this.id = id;
-    }
-    return EventId;
-}());
 //# sourceMappingURL=event.js.map

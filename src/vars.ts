@@ -9,6 +9,7 @@ export class Vars {
         "info": [],
         "list-info": [],
         "list-error": [],
-        "list-log": []
+        "list-log": [],
+        "clear": []
     }
 }

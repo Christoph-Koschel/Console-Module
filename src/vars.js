@@ -14,7 +14,8 @@ var Vars = /** @class */ (function () {
         "info": [],
         "list-info": [],
         "list-error": [],
-        "list-log": []
+        "list-log": [],
+        "clear": []
     };
     return Vars;
 }());

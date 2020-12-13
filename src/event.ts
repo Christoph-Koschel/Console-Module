@@ -1,4 +1,5 @@
-const {Vars} = require("./vars");
+import {Vars} from "./vars";
+import {EventId} from "./eventId";
 
 export class Event {
     public On(event: "error" |
@@ -22,13 +23,5 @@ export class Event {
         for (let i: number = 0; i < eventList.length; i++) {
             eventList[i](value);
         }
-    }
-}
-
-class EventId {
-    public readonly id: number;
-
-    constructor(id: number) {
-        this.id = id;
     }
 }

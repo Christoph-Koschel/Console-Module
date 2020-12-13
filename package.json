@@ -8,7 +8,8 @@
     "test": "node test/test.js",
     "git-commit": "git commit -m \"Console-Module\"",
     "git-remote": "git remote add origin https://github.com/Christoph-Koschel/Console-Module.git",
-    "git-push": "git push -u origin master"
+    "git-push": "git push -u origin master",
+    "git-add": "git add ."
   },
   "repository": {
     "type": "git",
