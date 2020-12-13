@@ -3,6 +3,7 @@ import {Event} from "./event";
 import * as list from"./list";
 import * as write from "./write";
 import * as table from "./table";
+import {View} from "./view";
 
 const event = new Event();
 
@@ -52,6 +53,10 @@ export const Write = write.Write.Write;
 
 
 export const On = event.On;
+export const view = {
+    Send: View.Send,
+    On: View.On
+}
 
 //endregion
 //region templates

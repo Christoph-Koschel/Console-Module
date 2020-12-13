@@ -41,7 +41,6 @@ export const view = {
     On: View.On
 }
 
-
 //endregion
 //region templates
 

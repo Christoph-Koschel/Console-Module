@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Table = exports.List = exports.On = exports.Write = exports.variables = void 0;
+exports.Table = exports.List = exports.view = exports.On = exports.Write = exports.variables = void 0;
 var vars_1 = require("./vars");
 var event_1 = require("./event");
 var list = require("./list");
 var write = require("./write");
 var table = require("./table");
+var view_1 = require("./view");
 var event = new event_1.Event();
 //region vars and args
 exports.variables = {
@@ -40,6 +41,10 @@ exports.Write = write.Write.Write;
 //endregion
 //region event-functions
 exports.On = event.On;
+exports.view = {
+    Send: view_1.View.Send,
+    On: view_1.View.On
+};
 //endregion
 //region templates
 exports.List = list.List;
