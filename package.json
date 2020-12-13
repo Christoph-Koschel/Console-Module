@@ -1,0 +1,25 @@
+{
+  "name": "@christoph-koschel/console-module",
+  "version": "1.4.26",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test/test.js",
+    "git-commit": "git commit -m \"Console-Module\"",
+    "git-remote": "git remote add origin https://github.com/Christoph-Koschel/Console-Module.git",
+    "git-push": "git push -u origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Christoph-Koschel/Console-Module.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.13",
+    "typescript": "^4.1.3"
+  }
+}
