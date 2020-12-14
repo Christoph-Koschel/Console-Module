@@ -13,6 +13,6 @@ export class View {
     public static On(event: "clear", callback: Function) {
         let id:number = Vars.eventEmitter[event].length;
         Vars.eventEmitter[event].push(callback);
-        return new EventId(id);
+        return new EventId(id,event);
     }
 }

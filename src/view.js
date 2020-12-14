@@ -15,7 +15,7 @@ var View = /** @class */ (function () {
     View.On = function (event, callback) {
         var id = vars_1.Vars.eventEmitter[event].length;
         vars_1.Vars.eventEmitter[event].push(callback);
-        return new eventId_1.EventId(id);
+        return new eventId_1.EventId(id, event);
     };
     return View;
 }());

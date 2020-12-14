@@ -2,8 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EventId = void 0;
 var EventId = /** @class */ (function () {
-    function EventId(id) {
+    function EventId(id, event) {
         this.id = id;
+        this.event = event;
     }
     return EventId;
 }());

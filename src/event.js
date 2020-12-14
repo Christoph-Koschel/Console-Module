@@ -11,7 +11,7 @@ var Event = /** @class */ (function () {
         var id = vars_1.Vars.eventEmitter[event].length;
         // @ts-ignore
         vars_1.Vars.eventEmitter[event].push(callback);
-        return new eventId_1.EventId(id);
+        return new eventId_1.EventId(id, event);
     };
     Event.prototype.Emit = function (event, value) {
         // @ts-ignore

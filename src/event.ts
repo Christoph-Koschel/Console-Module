@@ -10,7 +10,7 @@ export class Event {
         let id: number = Vars.eventEmitter[event].length;
         // @ts-ignore
         Vars.eventEmitter[event].push(callback);
-        return new EventId(id);
+        return new EventId(id, event);
     }
 
     public Emit(event: "error" |
