@@ -13,6 +13,11 @@ var Event = /** @class */ (function () {
         vars_1.Vars.eventEmitter[event].push(callback);
         return new eventId_1.EventId(id, event);
     };
+    Event.prototype.Remove = function (eventId) {
+        var id = eventId.id;
+        var event = eventId.event;
+        delete vars_1.Vars.eventEmitter[event][id];
+    };
     Event.prototype.Emit = function (event, value) {
         // @ts-ignore
         var eventList = vars_1.Vars.eventEmitter[event];

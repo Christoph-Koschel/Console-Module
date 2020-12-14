@@ -12,6 +12,11 @@ var View = /** @class */ (function () {
             list[i]();
         }
     };
+    View.Remove = function (eventId) {
+        var id = eventId.id;
+        var event = eventId.event;
+        delete vars_1.Vars.eventEmitter[event][id];
+    };
     View.On = function (event, callback) {
         var id = vars_1.Vars.eventEmitter[event].length;
         vars_1.Vars.eventEmitter[event].push(callback);

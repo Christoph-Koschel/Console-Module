@@ -51,13 +51,13 @@ export const Write = write.Write.Write;
 //endregion
 //region event-functions
 
-
 export const On = event.On;
+export const RemoveOn = event.Remove;
 export const view = {
     Send: View.Send,
-    On: View.On
+    On: View.On,
+    Remove: View.Remove
 }
-
 //endregion
 //region templates
 

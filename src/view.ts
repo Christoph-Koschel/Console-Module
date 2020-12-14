@@ -10,6 +10,13 @@ export class View {
         }
     }
 
+    public static Remove(eventId:EventId) {
+        let id = eventId.id;
+        let event = eventId.event;
+
+        delete Vars.eventEmitter[event][id];
+    }
+
     public static On(event: "clear", callback: Function) {
         let id:number = Vars.eventEmitter[event].length;
         Vars.eventEmitter[event].push(callback);

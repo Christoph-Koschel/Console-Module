@@ -13,6 +13,13 @@ export class Event {
         return new EventId(id, event);
     }
 
+    public Remove(eventId: EventId) {
+        let id = eventId.id;
+        let event = eventId.event;
+
+        delete Vars.eventEmitter[event][id];
+    }
+
     public Emit(event: "error" |
                     "log" |
                     "info",

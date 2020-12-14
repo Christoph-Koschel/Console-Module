@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Table = exports.List = exports.view = exports.On = exports.Write = exports.variables = void 0;
+exports.Table = exports.List = exports.view = exports.RemoveOn = exports.On = exports.Write = exports.variables = void 0;
 var vars_1 = require("./vars");
 var event_1 = require("./event");
 var view_1 = require("./view");
@@ -29,9 +29,11 @@ exports.Write = write.Write.Write;
 //endregion
 //region event-functions
 exports.On = event.On;
+exports.RemoveOn = event.Remove;
 exports.view = {
     Send: view_1.View.Send,
-    On: view_1.View.On
+    On: view_1.View.On,
+    Remove: view_1.View.Remove
 };
 //endregion
 //region templates
